@@ -1,0 +1,6 @@
+{% ckan_extends %}
+
+{% block content_primary_nav %}
+    {{ super() }}
+    {{ h.build_nav_icon('ckanext_fiwaredemo_users', _('Users'), id=c.group_dict.name) }}
+{% endblock %}
