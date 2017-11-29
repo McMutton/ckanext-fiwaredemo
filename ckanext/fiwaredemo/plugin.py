@@ -46,7 +46,7 @@ class FiwaredemoPlugin(plugins.SingletonPlugin):
 
     def before_map(self, map):
         with SubMapper(map, controller='ckanext.fiwaredemo.controller:FiwaredemoController') as m:
-            m.connect('ckanext_fiwaredemo_users', '/organization/users/{id}', action='members', ckan_icon='users')
+            m.connect('ckanext_fiwaredemo_users', '/organization/users/{id}', action='users', ckan_icon='users')
         return map
 
     # IAuthFunctions

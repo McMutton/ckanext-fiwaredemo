@@ -9,7 +9,7 @@ NotFound = logic.NotFound
 
 class FiwaredemoController(OrganizationController):
 
-    def members(self, id):
+    def users(self, id):
         group_type = self._ensure_controller_matches_group_type(id)
 
         context = {'model': model, 'session': model.Session,
